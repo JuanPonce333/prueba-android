@@ -7,55 +7,73 @@
     android:background="@color/purple">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/logo"
         android:layout_width="216dp"
         android:layout_height="201dp"
-        app:srcCompat="@mipmap/ic_launcher_foreground"
-        tools:layout_editor_absoluteX="97dp"
-        tools:layout_editor_absoluteY="35dp" />
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher_foreground" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/nombreApp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:fontFamily="@font/aclonica"
         android:text="BumbleBum"
-        android:textColor="#FFF"
+        android:textColor="@color/white"
         android:textSize="34sp"
-        tools:layout_editor_absoluteX="92dp"
-        tools:layout_editor_absoluteY="257dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/descripcion"
         android:layout_width="366dp"
         android:layout_height="113dp"
+        android:layout_marginBottom="20dp"
         android:fontFamily="serif"
         android:text=" Inicia una nueva aventura con Bumblebum y descubre una nueva forma de ver el mundo"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/white"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="363dp" />
+        app:layout_constraintBottom_toTopOf="@+id/ingresar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.644"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombreApp"
+        app:layout_constraintVertical_bias="1.0" />
 
-    <TextView
-        android:id="@+id/textView5"
+    <Button
+        android:id="@+id/registrarse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="serif"
         android:text="Registrate"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/purple"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="157dp"
-        tools:layout_editor_absoluteY="684dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingresar" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="210dp"
-        android:layout_height="71dp"
+        android:id="@+id/ingresar"
+        android:layout_width="236dp"
+        android:layout_height="82dp"
         android:backgroundTint="@color/blue1"
         android:fontFamily="serif"
         android:text="Comienza"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/white"
         android:textSize="34sp"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="508dp" />
+        app:layout_constraintBottom_toTopOf="@id/registrarse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ingresar" />
 </androidx.constraintlayout.widget.ConstraintLayout>
